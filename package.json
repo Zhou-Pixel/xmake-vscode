@@ -2,7 +2,7 @@
   "name": "xmake-vscode",
   "displayName": "XMake",
   "description": "Extended XMake support in Visual Studio Code",
-  "version": "2.2.6",
+  "version": "2.2.8",
   "publisher": "tboox",
   "icon": "res/logo256.png",
   "repository": {
@@ -676,6 +676,11 @@
           "type": "string",
           "default": ".vscode",
           "description": "The compile_commands.json file directory"
+        },
+        "xmake.compileCommandsBackend": {
+          "type": "string",
+          "default": "clangd",
+          "description": "Set the LSP backend for compile_commands"
         },
         "xmake.additionalConfigArguments": {
           "type": "array",
